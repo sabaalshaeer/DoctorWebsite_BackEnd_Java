@@ -57,6 +57,7 @@ public class UsersController {
 		if (username == null && password == null) 
 				return users;	
 		// to check if the username is taken, if the object is null
+		//FE: this.http.get<User[]>(`http://localhost:8080/users?username=${username}`}
 		if (password == null) 
 			for(User user : users) {
 				if (user.username.equals(username)) {
